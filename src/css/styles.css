@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -8,13 +9,82 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
-  color: #212121;
+  color: white;
   line-height: 1.5;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
   margin-bottom: 16px;
+  margin-top: 200px;
+}
+.country-list {
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-left: 50px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.country-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.item-img {
+  height: 40px;
+  width: 60px;
+}
+.item-descr {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.country-info {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.country-info .country-list {
+  margin-left: 0;
+}
+.wrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.flag-img {
+  height: 50px;
+}
+.title {
+  font-size: 36px;
+}
+.country-item span {
+  font-size: 24px;
+  font-weight: 700;
+}
+/* .country-item {
+  display: block;
+  font-size: 24px;
+} */
+.waves {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
